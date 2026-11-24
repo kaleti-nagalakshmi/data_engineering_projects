@@ -30,23 +30,6 @@ An end-to-end e-commerce sales data pipeline built on **Databricks** using the *
 
 Transformations are written in Python/PySpark. SQL may optionally be used for inspection but is not the primary implementation approach.
 
-## Architecture
-
-```mermaid
-flowchart LR
-    A[Daily order CSVs<br/>Unity Catalog volume: landing] -->|Auto Loader| B[(Bronze<br/>bronze_orders_sdp)]
-    B --> C[Silver: clean & type<br/>silver_orders_cleaned → silver_orders_typed]
-    C --> D[(silver_orders)]
-    C --> E[(silver_orders_rejected)]
-    D --> F[gold_delivered_orders]
-    F --> G[gold_city_sales]
-    F --> H[gold_category_sales]
-    F --> I[gold_product_sales]
-    F --> J[gold_payment_analysis]
-    D -.planned.-> K[gold_order_summary]
-    D -.planned.-> L[gold_sales_summary]
-
-```
 ![Architecture](image/architecture.png)
 
 
