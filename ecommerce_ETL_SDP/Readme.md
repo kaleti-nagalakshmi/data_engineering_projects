@@ -45,9 +45,9 @@ flowchart LR
     F --> J[gold_payment_analysis]
     D -.planned.-> K[gold_order_summary]
     D -.planned.-> L[gold_sales_summary]
-![Architecture](image/architecture.png)
-```
 
+```
+![Architecture](image/architecture.png)
 
 
 | Layer | Purpose | Tables |
