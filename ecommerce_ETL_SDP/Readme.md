@@ -47,7 +47,7 @@ flowchart LR
     D -.planned.-> L[gold_sales_summary]
 ```
 
-Dashed arrows are planned and not yet implemented.
+
 
 | Layer | Purpose | Tables |
 |---|---|---|
