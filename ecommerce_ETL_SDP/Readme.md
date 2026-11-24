@@ -29,6 +29,7 @@ An end-to-end e-commerce sales data pipeline built on **Databricks** using the *
 | Current scope | Bronze implemented, Silver transformations done, Gold partially implemented |
 
 Transformations are written in Python/PySpark. SQL may optionally be used for inspection but is not the primary implementation approach.
+## Architecture
 
 ![Architecture](image/architecture.png)
 
